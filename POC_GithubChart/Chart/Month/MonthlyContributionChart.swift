@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct MonthlyContributionChart: View {
+    
+    // builder
     let monthData: MonthData
     let config: ContributionChartConfig
     
-    private let weekDays = ["L", "M", "M", "J", "V", "S", "D"]
+    private let weekDays = ["M", "T", "W", "T", "F", "S", "S"]
     
+    // MARK: -
     var body: some View {
         VStack(spacing: 8) {
             Text(monthData.month)
@@ -33,5 +36,7 @@ struct MonthlyContributionChart: View {
                 )
             }
         }
-    }
-}
+    } // body
+} // struct
+
+// TODO: add Preview

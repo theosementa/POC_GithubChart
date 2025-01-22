@@ -1,5 +1,5 @@
 //
-//  ContributionChartView.swift
+//  YearlyContributionChartView.swift
 //  POC_GithubChart
 //
 //  Created by Theo Sementa on 19/01/2025.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ContributionChartView: View {
+struct YearlyContributionChartView: View {
+    
+    // builder
     let contributions: [Contribution]
     let config: ContributionChartConfig
     
@@ -45,6 +47,7 @@ struct ContributionChartView: View {
         return result
     }
     
+    // MARK: -
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             VStack(spacing: 8) {
@@ -65,6 +68,7 @@ struct ContributionChartView: View {
             }
             .padding()
         }
-    }
-}
+    } // body
+} // strcut
 
+// TODO: add Preview

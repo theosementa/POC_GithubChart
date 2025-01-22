@@ -11,12 +11,14 @@ struct ContentView: View {
     
     @State var contributions: [Contribution] = Contribution.generate()
     
+    // MARK: -
     var body: some View {
-        ContributionChartView(contributions: contributions)
+        YearlyContributionChartView(contributions: contributions)
             .padding()
-    }
-}
+    } // body
+} // struct
 
+// MARK: - Preview
 #Preview {
     ContentView()
 }

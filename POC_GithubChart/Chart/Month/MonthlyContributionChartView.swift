@@ -13,6 +13,11 @@ struct MonthlyContributionChartView: View {
     let contributions: [Contribution]
     let config: ContributionChartConfig
     
+    init(contributions: [Contribution], config: ContributionChartConfig = .default) {
+        self.contributions = contributions.sorted { $0.date < $1.date }
+        self.config = config
+    }
+    
     private var monthlyData: [MonthData] {
         let calendar = Calendar.current
         var monthsData: [MonthData] = []
