@@ -67,3 +67,4 @@ struct ContributionChartView: View {
         }
     }
 }
+

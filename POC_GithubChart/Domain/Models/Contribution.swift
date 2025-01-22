@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Contribution: Identifiable {
+struct Contribution: Identifiable, Hashable {
     let id: UUID = UUID()
     let date: Date
     let isContributed: Bool

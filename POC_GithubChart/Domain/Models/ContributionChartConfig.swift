@@ -22,4 +22,12 @@ struct ContributionChartConfig {
         spacing: 2,
         cornerRadius: 2
     )
+    
+    static let small = ContributionChartConfig(
+        blockColor: .green,
+        blockBackgroundColor: .secondary.opacity(0.2),
+        rectangleWidth: 12,
+        spacing: 2,
+        cornerRadius: 2
+    )
 }
